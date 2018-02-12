@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction(){
+document.getElementById("demo").innerHTML="Name" + document.subu.Name.value ;
+document.getElementById("demo").innerHTML="college" +document.subu.college.value + "YEAR" + document.subu.YEAR.value + "checkbox" + document.subu.checkbox.value;
+}
+</script>
+<body>
+<body background="eventposter1.jpg">
+<p id="demo"></p>
+<form action="#" name="subu">
+  Name:<br>
+  <input type="text" name="Name"  maxlength=5>
+  <br>
+Address:<br>
+<textarea "name="address"></textarea><br>
+ <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  <br><br>
+<select name="college" size= multiple>
+    <option value="SREC">SREC</option>
+    <option value="SRIT">SRIT</option>
+    <option value="PSG">PSG</option>
+    <option value="KCT">KCT</option>
+    <option value="PPG">PPG</option>
+  </select>
+  <br><br>
+ <input type="checkbox" name="IT" value="IT">IT
+<br>
+<input type="checkbox" name="CSE" value="CSE">CSE
+<br>
+<input type="checkbox" name="EEE" value="IT">EEE
+<br>
+<input type="checkbox" name="ECE" value="ECE">ECE
+<br><br>
+<select name="YEAR" size="4">
+    <option value="FIRST">first</option>
+    <option value="second">second</option>
+    <option value="third">third</option>
+    <option value="final">final</option>
+  </select>
+<br><br>
+ E-mail:<br>
+  <input type="email" name="email"><br><br>
+ Telephone:<br>
+  <input type="tel" name="usrtel"><br>
+  
+  <input type="image" src="file:///D:/subu.ms/submit.png" alt="Submit" width="300" height="200" onclick="myFunction();return false;">
+  
+</form>
+</body>
+
+</html>
